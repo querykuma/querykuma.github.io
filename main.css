@@ -1,0 +1,121 @@
+.far,
+.fab {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/fa-regular-400.woff2") format("woff2"), url("fonts/fa-regular-400.woff") format("woff"), url("fonts/fa-regular-400.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/fa-brands-400.woff2") format("woff2"), url("fonts/fa-brands-400.woff") format("woff"), url("fonts/fa-brands-400.ttf") format("truetype");
+}
+
+.far {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+}
+
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+}
+
+.fa-smile:before {
+    content: "\f118";
+}
+
+.fa-github:before {
+    content: "\f09b";
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.top {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.topnav {
+    display: flex;
+    width: 640px;
+    justify-content: flex-end;
+    line-height: 2.5em;
+}
+
+.toplink {
+    color: #0073d8;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-bottom: 1px solid transparent;
+}
+
+.toplink:focus,
+.toplink:hover {
+    border-bottom: 1px solid #0073d8;
+}
+
+.icon {
+    padding: 0 5px;
+}
+
+.center {
+    flex: 1 1;
+    width: 640px;
+    background: white;
+    margin: 15px 0;
+}
+
+.left-image {
+    display: flex;
+}
+
+.profile {
+    cursor: pointer;
+    transition: .2s;
+}
+
+.profile:hover {
+    transform: rotateY(20deg);
+}
+
+.right {
+    flex: 1 1;
+    color: #2f2f2f;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 10px 0 5px;
+}
+
+.selectnone {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
