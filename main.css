@@ -63,9 +63,9 @@ body {
 
 .topnav {
     display: flex;
-    width: 640px;
     justify-content: flex-end;
     line-height: 2.5em;
+    margin-right: 5px;
 }
 
 .toplink {
@@ -91,25 +91,14 @@ body {
     margin: 15px 0;
 }
 
-.left-image {
-    display: flex;
-}
-
-.profile {
+.profileimg {
     cursor: pointer;
     transition: .2s;
+    padding-right: 5px;
 }
 
-.profile:hover {
+.profileimg:hover {
     transform: rotateY(20deg);
-}
-
-.right {
-    flex: 1 1;
-    color: #2f2f2f;
-    width: 100%;
-    margin-top: 50px;
-    padding: 0 10px 0 5px;
 }
 
 .selectnone {
@@ -118,4 +107,37 @@ body {
     -khtml-user-select: none;
     -webkit-user-select: none;
     -webkit-touch-callout: none;
+}
+
+.article {
+    color: #2f2f2f;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.float {
+    float: left;
+ }
+.floatclear
+{
+   clear: both;
+}
+@media screen and (min-width:640px) {
+    .width {
+        width: 640px;
+    }
+    .article_space {
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:640px) {
+    .profileimg {
+        width: 120px;
+        height: 120px;
+    }
+    .width {
+        width: 100%;
+    }
+    .article_space {
+        margin-top: 0px;
+    }
 }
