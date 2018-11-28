@@ -7,6 +7,12 @@
     font-variant: normal;
     text-rendering: auto;
 }
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    src: url("fonts/fa-solid-900.woff2") format("woff2"), url("fonts/fa-solid-900.woff") format("woff"), url("fonts/fa-solid-900.ttf") format("truetype");
+}
 
 @font-face {
     font-family: 'Font Awesome 5 Free';
@@ -22,6 +28,11 @@
     src: url("fonts/fa-brands-400.woff2") format("woff2"), url("fonts/fa-brands-400.woff") format("woff"), url("fonts/fa-brands-400.ttf") format("truetype");
 }
 
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
 .far {
     font-family: 'Font Awesome 5 Free';
     font-weight: 400;
@@ -29,6 +40,24 @@
 
 .fab {
     font-family: 'Font Awesome 5 Brands';
+}
+
+.fa-network-wired:before {
+    content: "\f6ff"; }
+
+.fa-landmark:before {
+    content: "\f66f"; }
+
+.fa-futbol:before {
+    content: "\f1e3";
+}
+
+.fa-cube:before {
+    content: "\f1b2";
+}
+
+.fa-cubes:before {
+    content: "\f1b3";
 }
 
 .fa-smile:before {
@@ -59,6 +88,7 @@ body {
     background-color: white;
     display: flex;
     justify-content: center;
+    flex: 0 0 auto;
 }
 
 .topnav {
@@ -85,7 +115,6 @@ body {
 }
 
 .center {
-    flex: 1 1;
     width: 640px;
     background: white;
     margin: 15px 0;
@@ -140,4 +169,39 @@ body {
     .article_space {
         margin-top: 0px;
     }
+}
+@media screen and (max-height:500px) {
+    .profileimg {
+        width: 120px;
+        height: 120px;
+    }
+}
+.card{
+    background: white;
+    margin: 15px 0;
+    padding: 30px 16px 26px 16px;
+    box-sizing: border-box;
+}
+h5{
+    margin-top: 0;
+}
+.reponame, .reponame:hover {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 1;
+}
+.repotext {
+    color: #999;
+    margin-block-end: 24px;
+}
+.cardlink {
+    color: #0073d8;
+    text-decoration: none;
+    padding: 26px 4px;
+    border-bottom: 1px solid transparent;
+}
+.cardlink:focus, .cardlink:hover {
+    border-bottom: 1px solid #0073d8;
 }
