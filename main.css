@@ -117,39 +117,41 @@ body {
   padding: 0 5px;
 }
 
+.profileimg_container {
+  margin: 0;
+  padding: 0;
+}
+
 .profileimg {
+  margin: 0;
+  padding: 0;
   cursor: pointer;
-  transition: 0.2s;
-  padding-right: 5px;
+  transition: transform 1s ease;
   object-fit: cover;
 }
 
-.profileimg:hover {
-  transform: rotateY(20deg);
+.profileimg_container:hover .profileimg {
+  margin: 0;
+  padding: 0;
+  background: lightgray;
+  mix-blend-mode: difference;
+  transform: rotateY(30deg);
 }
 
 .selectnone {
   user-select: none;
 }
 
-.float {
-  float: left;
-}
-
-.floatclear {
-  clear: both;
-}
-
 @media screen and (min-width: 640px) {
   .width {
     width: 640px;
   }
-  .article_space {
-    margin-top: 50px;
-  }
 }
 
 @media screen and (max-width: 640px) {
+  .profileimg_container {
+    flex: 0 0 120px;
+  }
   .profileimg {
     width: 120px;
     height: 120px;
@@ -157,12 +159,12 @@ body {
   .width {
     width: 100%;
   }
-  .article_space {
-    margin-top: 0px;
-  }
 }
 
 @media screen and (max-height: 500px) {
+  .profileimg_container {
+    flex: 0 0 120px;
+  }
   .profileimg {
     width: 120px;
     height: 120px;
@@ -180,14 +182,6 @@ body {
 .card > h3 {
   margin-top: 0;
   color: #0b0b9f;
-}
-
-.cardname,
-.cardname:hover {
-  font-size: 20px;
-  text-decoration: none;
-  font-weight: 400;
-  line-height: 1;
 }
 
 .cardtext {
