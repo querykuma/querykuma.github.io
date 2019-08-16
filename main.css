@@ -43,6 +43,10 @@
   font-family: 'Font Awesome 5 Brands';
 }
 
+.fa-lightbulb:before {
+  content: '\f0eb';
+}
+
 .fa-network-wired:before {
   content: '\f6ff';
 }
@@ -92,6 +96,7 @@ body {
   display: flex;
   justify-content: center;
   flex: 0 0 auto;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 .topnav {
@@ -178,11 +183,18 @@ body {
   padding: 30px 16px 26px 16px;
   box-sizing: border-box;
   color: #333;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
 }
 
 .card > h3 {
   margin-top: 0;
   color: #0b0b9f;
+}
+
+.card a{
+  color: #0073d8;
+  text-decoration: none;
 }
 
 .cardtext {
