@@ -9,70 +9,70 @@
 }
 
 @font-face {
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: 900;
-  src: url('fonts/fa-solid-900.woff2') format('woff2'), url('fonts/fa-solid-900.woff') format('woff'), url('fonts/fa-solid-900.ttf') format('truetype');
+  src: url("fonts/fa-solid-900.woff2") format("woff2"), url("fonts/fa-solid-900.woff") format("woff"), url("fonts/fa-solid-900.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: 400;
-  src: url('fonts/fa-regular-400.woff2') format('woff2'), url('fonts/fa-regular-400.woff') format('woff'), url('fonts/fa-regular-400.ttf') format('truetype');
+  src: url("fonts/fa-regular-400.woff2") format("woff2"), url("fonts/fa-regular-400.woff") format("woff"), url("fonts/fa-regular-400.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Font Awesome 5 Brands';
+  font-family: "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
-  src: url('fonts/fa-brands-400.woff2') format('woff2'), url('fonts/fa-brands-400.woff') format('woff'), url('fonts/fa-brands-400.ttf') format('truetype');
+  src: url("fonts/fa-brands-400.woff2") format("woff2"), url("fonts/fa-brands-400.woff") format("woff"), url("fonts/fa-brands-400.ttf") format("truetype");
 }
 
 .fas {
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
 .far {
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-weight: 400;
 }
 
 .fab {
-  font-family: 'Font Awesome 5 Brands';
+  font-family: "Font Awesome 5 Brands";
 }
 
 .fa-lightbulb:before {
-  content: '\f0eb';
+  content: "\f0eb";
 }
 
 .fa-network-wired:before {
-  content: '\f6ff';
+  content: "\f6ff";
 }
 
 .fa-landmark:before {
-  content: '\f66f';
+  content: "\f66f";
 }
 
 .fa-futbol:before {
-  content: '\f1e3';
+  content: "\f1e3";
 }
 
 .fa-cube:before {
-  content: '\f1b2';
+  content: "\f1b2";
 }
 
 .fa-cubes:before {
-  content: '\f1b3';
+  content: "\f1b3";
 }
 
 .fa-smile:before {
-  content: '\f118';
+  content: "\f118";
 }
 
 .fa-github:before {
-  content: '\f09b';
+  content: "\f09b";
 }
 
 html {
@@ -86,7 +86,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
 
