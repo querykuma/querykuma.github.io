@@ -43,34 +43,47 @@
   font-family: "Font Awesome 5 Brands";
 }
 
+/* far */
 .fa-lightbulb:before {
   content: "\f0eb";
 }
 
+/* fas */
 .fa-network-wired:before {
   content: "\f6ff";
 }
 
+/* fas */
 .fa-landmark:before {
   content: "\f66f";
 }
 
+/* fas */
 .fa-futbol:before {
   content: "\f1e3";
 }
 
+/* fas */
 .fa-cube:before {
   content: "\f1b2";
 }
 
+/* fas */
 .fa-cubes:before {
   content: "\f1b3";
 }
 
+/* far */
 .fa-smile:before {
   content: "\f118";
 }
 
+/* fab */
+.fa-windows:before {
+  content: "\f17a";
+}
+
+/* fab */
 .fa-github:before {
   content: "\f09b";
 }
