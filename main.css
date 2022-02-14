@@ -136,11 +136,61 @@ h2 {
 
 .toplink:focus,
 .toplink:hover {
-  border-bottom: 2px solid rgb(0 115 216 / 75%);
+  background   : #0073d8;
+  border-radius: 4px;
+  color        : white;
 }
 
 .icon {
   padding: 0 5px;
+}
+
+.selectnone {
+  user-select: none;
+}
+
+.card {
+  background   : white;
+  margin       : 15px 0;
+  padding      : 0 16px;
+  box-sizing   : border-box;
+  color        : #333;
+  box-shadow   : 0 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.card>h2 {
+  margin-top: 20px;
+  color     : #0b0b9f;
+}
+
+.card a {
+  color          : #0073d8;
+  text-decoration: none;
+  display        : inline-block
+}
+
+.cardtext {
+  color           : #999;
+  margin-block-end: 24px;
+}
+
+.cardlink {
+  color          : #0073d8;
+  text-decoration: none;
+  padding        : 18px 4px;
+}
+
+.cardlink:focus,
+.cardlink:hover {
+  background   : #0073d8;
+  border-radius: 4px;
+  color        : white;
+}
+
+.card>.guide {
+  display: flex;
+  gap    : 10px;
 }
 
 .profileimg_container {
@@ -165,14 +215,8 @@ h2 {
   transform     : rotateY(30deg);
 }
 
-.selectnone {
-  user-select: none;
-}
-
-@media screen and (min-width: 640px) {
-  .width {
-    width: 640px;
-  }
+.width {
+  width: min(640px, 100%);
 }
 
 @media screen and (max-width: 640px) {
@@ -184,55 +228,4 @@ h2 {
     width : 120px;
     height: 120px;
   }
-
-  .width {
-    width: 100%;
-  }
-}
-
-@media screen and (max-height: 500px) {
-  .profileimg_container {
-    flex: 0 0 120px;
-  }
-
-  .profileimg {
-    width : 120px;
-    height: 120px;
-  }
-}
-
-.card {
-  background   : white;
-  margin       : 15px 0;
-  padding      : 30px 16px 20px 16px;
-  box-sizing   : border-box;
-  color        : #333;
-  box-shadow   : 0 1px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
-}
-
-.card>h2 {
-  margin-top: 0;
-  color     : #0b0b9f;
-}
-
-.card a {
-  color          : #0073d8;
-  text-decoration: none;
-}
-
-.cardtext {
-  color           : #999;
-  margin-block-end: 24px;
-}
-
-.cardlink {
-  color          : #0073d8;
-  text-decoration: none;
-  padding        : 18px 4px;
-}
-
-.cardlink:focus,
-.cardlink:hover {
-  border-bottom: 2px solid rgb(0 115 216 / 75%);
 }
