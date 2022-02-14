@@ -88,19 +88,11 @@
   content: "\f09b";
 }
 
-html {
-  height: 100%;
-}
-
 body {
-  height          : 100%;
   margin          : 0;
   background-color: #eeeeee;
-  display         : flex;
-  flex-direction  : column;
-  align-items     : center;
   font-family     : "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size       : 16px;
+  color           : #333;
 }
 
 h1 {
@@ -116,7 +108,6 @@ h2 {
   background-color: white;
   display         : flex;
   justify-content : center;
-  flex            : 0 0 auto;
   box-shadow      : 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 
@@ -149,36 +140,30 @@ h2 {
   user-select: none;
 }
 
+.cards {
+  margin        : 20px auto;
+  display       : flex;
+  flex-direction: column;
+  gap           : 25px;
+}
+
 .card {
   background   : white;
-  margin       : 15px 0;
   padding      : 0 16px;
   box-sizing   : border-box;
-  color        : #333;
   box-shadow   : 0 1px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .card>h2 {
-  margin-top: 20px;
-  color     : #0b0b9f;
-}
-
-.card a {
-  color          : #0073d8;
-  text-decoration: none;
-  display        : inline-block
-}
-
-.cardtext {
-  color           : #999;
-  margin-block-end: 24px;
+  color: #0b0b9f;
 }
 
 .cardlink {
+  display        : inline-block;
   color          : #0073d8;
   text-decoration: none;
-  padding        : 18px 4px;
+  padding        : 10px 4px;
 }
 
 .cardlink:focus,
@@ -188,7 +173,7 @@ h2 {
   color        : white;
 }
 
-.card>.guide {
+.guide {
   display: flex;
   gap    : 10px;
 }
