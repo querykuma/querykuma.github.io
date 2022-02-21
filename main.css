@@ -119,17 +119,7 @@ h2 {
 }
 
 .toplink {
-  color          : #0073d8;
-  text-decoration: none;
-  padding        : 4px 8px;
-  border-bottom  : 2px solid transparent;
-}
-
-.toplink:focus,
-.toplink:hover {
-  background   : #0073d8;
-  border-radius: 4px;
-  color        : white;
+  padding: 4px 8px;
 }
 
 .icon {
@@ -160,17 +150,39 @@ h2 {
 }
 
 .cardlink {
+  padding: 10px 4px;
+}
+
+.hoverlink {
   display        : inline-block;
   color          : #0073d8;
   text-decoration: none;
-  padding        : 10px 4px;
+  position       : relative;
+  z-index        : 1;
+  transition     : all .2s ease-in-out;
+  border-radius  : 4px;
 }
 
-.cardlink:focus,
-.cardlink:hover {
+.hoverlink::before {
+  content      : '';
+  position     : absolute;
   background   : #0073d8;
+  left         : 0;
+  bottom       : 0;
+  width        : 100%;
+  height       : 0;
+  z-index      : -1;
+  transition   : all .2s ease-in-out;
   border-radius: 4px;
-  color        : white;
+}
+
+.hoverlink:hover {
+  color: white;
+}
+
+.hoverlink:hover::before {
+  bottom: 0;
+  height: 100%;
 }
 
 .guide {
@@ -186,7 +198,6 @@ h2 {
 .profileimg {
   margin    : 0;
   padding   : 0;
-  cursor    : pointer;
   transition: transform 1s ease;
   object-fit: cover;
   display   : block;
