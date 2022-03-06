@@ -88,13 +88,6 @@
   content: "\f09b";
 }
 
-body {
-  margin          : 0;
-  background-color: #eeeeee;
-  font-family     : "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color           : #333;
-}
-
 h1 {
   font-size: 1.5em;
 }
@@ -116,6 +109,7 @@ h2 {
   justify-content: flex-end;
   line-height    : 2.5em;
   margin-right   : 5px;
+  flex-wrap      : wrap;
 }
 
 .toplink {
@@ -130,6 +124,7 @@ h2 {
   user-select: none;
 }
 
+/* .cardsでmainのdisplayを指定 */
 .cards {
   margin        : 20px auto;
   display       : flex;
@@ -215,6 +210,31 @@ h2 {
   width: min(640px, 100%);
 }
 
+body {
+  margin          : 0;
+  background-color: #eeeeee;
+  font-family     : "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color           : #333;
+  display         : grid;
+  grid-template-areas:
+    'nav'
+    'main';
+  grid-template-columns: 1fr;
+  grid-template-rows   : auto 1fr;
+}
+
+body>header {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+nav h2 {
+  display: none;
+}
+
 @media screen and (max-width: 640px) {
   .profileimg_container {
     flex: 0 0 40vw;
@@ -222,6 +242,20 @@ h2 {
 
   .profileimg {
     width : 40vw;
-    height: 40vw;
+    height: auto;
+  }
+
+  .cards {
+    margin: 20px 0;
+  }
+
+  .card {
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  * {
+    word-break: break-all;
   }
 }
