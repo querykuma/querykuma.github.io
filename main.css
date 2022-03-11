@@ -235,6 +235,12 @@ main {
   padding  : var(--cards-gap) 0;
 }
 
+.hidden {
+  position: absolute;
+  top     : -9999px;
+  left    : -9999px;
+}
+
 @media screen and (max-width: 640px) {
   .profileimg_container {
     flex: 0 0 40vw;
