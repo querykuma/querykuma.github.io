@@ -183,14 +183,15 @@ h2 {
   height: 100%;
 }
 
-.guide {
+header.card {
   display: flex;
-  gap    : 10px;
 }
 
 .profileimg_container {
-  margin : 0;
+  float  : left;
+  margin : 0 10px 10px 0;
   padding: 0;
+  order  : 1;
 }
 
 .profileimg {
@@ -239,6 +240,10 @@ main {
   position: absolute;
   top     : -9999px;
   left    : -9999px;
+}
+
+.card_figure {
+  order: 2
 }
 
 @media screen and (max-width: 640px) {
