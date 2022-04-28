@@ -38,17 +38,29 @@
 <body>
   <main class="cards width">
     <header class="card">
+      <div class="profileimg_container">
+        <img class="profileimg selectnone" src="./querykuma.png" width="256" height="256" draggable="false"
+          alt="profile" />
+      </div>
       <div class="card_figure">
         <h1>Query Kumaの開発日記</h1>
         <p>Qiitaで記事を書いたりしています。</p>
         <p>一番好きな関数はJavaScriptのquerySelectorAllです。</p>
       </div>
-      <figure class="profileimg_container"><img class="profileimg selectnone" src="./querykuma.png" width="256"
-          height="256" draggable="false" alt="profile" /></figure>
     </header>
 
     <section class="cards">
       <h2 class="hidden">articleの一覧</h2>
+
+      <article class="card">
+        <h3>require-unicode-regexp の自動修正</h3>
+        <p>2022年4月28日 ESLintのrequire-unicode-regexpルールでfixに対応させました。</p>
+        <a class="cardlink hoverlink"
+          href="https://github.com/querykuma/snippets/blob/master/eslint-rules/require-unicode-regexp.js"
+          title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
+        <a class="cardlink hoverlink" href="https://qiita.com/querykuma/items/fe134af04ce3c344f4ce"
+          title="View article on Qiita"><span class="far fa-smile icon"></span>Qiita</a>
+      </article>
 
       <article class="card">
         <h3>Abema Timetable Kaizen</h3>
@@ -71,10 +83,11 @@
       <article class="card">
         <h3>PrecParser</h3>
         <p>2021年2月24日 Operator Precedence Parsingで数式を構文解析して計算するプログラムを作りました。</p>
-        <p><a href="http://querykuma.github.io/PrecParser" title="PrecParser Demo">Website</a>でデモが見れます。</p>
+        <p><a class="hoverlink" href="https://querykuma.github.io/PrecParser"
+            title="PrecParser Demo">Website</a>でデモが見れます。</p>
         <a class="cardlink hoverlink" href="https://github.com/querykuma/PrecParser"
           title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
-        <a class="cardlink hoverlink" href="http://querykuma.github.io/PrecParser" title="View Website"><span
+        <a class="cardlink hoverlink" href="https://querykuma.github.io/PrecParser" title="View Website"><span
             class="fas fa-cube icon"></span>Website</a>
       </article>
 
@@ -203,11 +216,11 @@
       <article class="card">
         <h3>kabegami</h3>
         <p>2018年11月28日 高機能な壁紙閲覧ソフトを作りました。</p>
-        <p>ローカル環境で使うことを想定して作りましたが、<a href="http://querykuma.github.io/kabegami"
+        <p>ローカル環境で使うことを想定して作りましたが、<a class="hoverlink" href="https://querykuma.github.io/kabegami"
             title="kabegami Demo">Website</a>でデモが見れます。自作の右クリックメニューから壁紙を選択したりできます。</p>
         <a class="cardlink hoverlink" href="https://github.com/querykuma/kabegami" title="View GitHub repository"><span
             class="fab fa-github icon"></span>GitHub</a>
-        <a class="cardlink hoverlink" href="http://querykuma.github.io/kabegami" title="View Website"><span
+        <a class="cardlink hoverlink" href="https://querykuma.github.io/kabegami" title="View Website"><span
             class="fas fa-cube icon"></span>Website</a>
       </article>
 
@@ -220,6 +233,7 @@
         <a class="cardlink hoverlink" href="https://qiita.com/querykuma/items/b41cd108e5df25ebbfda"
           title="View article on Qiita"><span class="far fa-smile icon"></span>Qiita</a>
       </article>
+    </section>
   </main>
 
   <header class="topbar">
