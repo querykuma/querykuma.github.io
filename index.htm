@@ -42,7 +42,7 @@
         <img class="profileimg selectnone" src="./querykuma.png" width="256" height="256" draggable="false"
           alt="profile" />
       </div>
-      <div class="card_figure">
+      <div>
         <h1>Query Kumaの開発日記</h1>
         <p>Qiitaで記事を書いたりしています。</p>
         <p>一番好きな関数はJavaScriptのquerySelectorAllです。</p>
@@ -53,8 +53,18 @@
       <h2 class="hidden">articleの一覧</h2>
 
       <article class="card">
+        <h3>no-prototype-builtins の自動修正対応</h3>
+        <p>2022年6月2日 ESLint の no-prototype-builtins ルールで obj.hasOwnProperty('a') を
+          Object.prototype.hasOwnProperty.call(obj,
+          'a') に自動修正するようにしました。</p>
+        <a class="cardlink hoverlink"
+          href="https://github.com/querykuma/snippets/blob/master/eslint-rules/no-prototype-builtins.js"
+          title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
+      </article>
+
+      <article class="card">
         <h3>no-tabs のコメント内のタブ許可</h3>
-        <p>2022年5月19日 ESLintのno-tabsルールでコメント内のタブを許可したものを作りました。</p>
+        <p>2022年5月19日 ESLint の no-tabs ルールでコメント内のタブを許可するようにしました。</p>
         <a class="cardlink hoverlink" href="https://github.com/querykuma/snippets/blob/master/eslint-rules/no-tabs.js"
           title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
       </article>
@@ -69,8 +79,8 @@
       </article>
 
       <article class="card">
-        <h3>require-unicode-regexp の自動修正</h3>
-        <p>2022年4月28日 ESLintのrequire-unicode-regexpルールでfixに対応させました。</p>
+        <h3>require-unicode-regexp の自動修正対応</h3>
+        <p>2022年4月28日 ESLint の require-unicode-regexp ルールで uフラグを付けて自動修正するようにしました。</p>
         <a class="cardlink hoverlink"
           href="https://github.com/querykuma/snippets/blob/master/eslint-rules/require-unicode-regexp.js"
           title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
@@ -121,7 +131,7 @@
       <article class="card">
         <h3>ESLint の no-cond-func ルール</h3>
         <p>2020年7月18日、ESLintのカスタムルールno-cond-funcを作成しました。</p>
-        <p>JavaScriptで条件の判定に()を付けない関数を使うことを禁止できます。</p>
+        <p>JavaScriptで条件の判定に()を付けない関数を使うことを禁止します。</p>
         <a class="cardlink hoverlink"
           href="https://github.com/querykuma/snippets/blob/master/eslint-rules/no-cond-func.js"
           title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
@@ -132,7 +142,7 @@
       <article class="card">
         <h3>ESLint の no-in-array ルール</h3>
         <p>2020年6月29日、ESLintのカスタムルールno-in-arrayを作成しました。</p>
-        <p>JavaScriptで条件の判定に'x in 配列'を使うことを禁止できます。</p>
+        <p>JavaScriptで条件の判定に'x in 配列'を使うことを禁止します。</p>
         <a class="cardlink hoverlink"
           href="https://github.com/querykuma/snippets/blob/master/eslint-rules/no-in-array.js"
           title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
