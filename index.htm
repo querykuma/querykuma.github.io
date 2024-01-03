@@ -64,7 +64,7 @@
       <article class="card">
         <h3>Highlight Selection</h3>
         <p>2022年6月7日、ページ上の選択範囲をキーワードとしてハイライトする拡張機能を作りました。ブックマークレットとしても利用できます</p>
-        <p>HTMLタグをまたがった選択範囲でもハイライトできることが強みです。</p>
+        <p>HTMLタグをまたがった選択範囲もハイライトできることが強みです。</p>
         <a class="cardlink hoverlink" href="https://github.com/querykuma/HighlightSelection"
           title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
         <a class="cardlink hoverlink" href="https://qiita.com/querykuma/items/4768f85f97f2d89fd47a"
@@ -89,7 +89,7 @@
       </article>
 
       <article class="card">
-        <h3>QiitaCommentsKaizen</h3>
+        <h3>Qiita Comments Kaizen</h3>
         <p>2022年5月17日、Qiitaのコメント欄を改善するユーザースクリプトを作りました。</p>
         <a class="cardlink hoverlink" href="https://github.com/querykuma/QiitaCommentsKaizen"
           title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
@@ -99,7 +99,7 @@
 
       <article class="card">
         <h3>require-unicode-regexp の自動修正</h3>
-        <p>2022年4月28日、ESLint の require-unicode-regexp ルールを修正しました。修正点は自動的に uフラグを付ることです。</p>
+        <p>2022年4月28日、ESLint の require-unicode-regexp ルールを修正しました。修正点は正規表現に uフラグを自動付与することです。</p>
         <a class="cardlink hoverlink"
           href="https://github.com/querykuma/snippets/blob/master/eslint-rules/require-unicode-regexp.js"
           title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
@@ -127,9 +127,9 @@
 
       <article class="card">
         <h3>PrecParser</h3>
-        <p>2021年2月24日、Operator Precedence Parsingで数式を構文解析して計算するプログラムを作りました。</p>
+        <p>2021年2月24日、Operator Precedence Parsingで構文解析して数式を計算するプログラムを作りました。</p>
         <p><a class="hoverlink" href="https://querykuma.github.io/PrecParser"
-            title="PrecParser Demo">Website</a>でデモが見れます。</p>
+            title="PrecParser Demo">Website</a>でデモを見れます。</p>
         <a class="cardlink hoverlink" href="https://github.com/querykuma/PrecParser"
           title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
         <a class="cardlink hoverlink" href="https://querykuma.github.io/PrecParser" title="View Website"><span
@@ -140,6 +140,9 @@
         <h3>Add This Folder To Workspace</h3>
         <p>2020年7月21日、Visual Studio CodeのExtensionを作成しました。</p>
         <p>エクスプローラーから開いたファイルをVisual Studio Codeのワークスペースに追加することを簡単にします。</p>
+        <p><a
+            href="https://marketplace.visualstudio.com/items?itemName=querykuma.add-this-folder-to-workspace">Marketplace</a>からインストールできます。
+        </p>
         <a class="cardlink hoverlink" href="https://github.com/querykuma/vscode-add-this-folder-to-workspace"
           title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
         <a class="cardlink hoverlink"
@@ -150,7 +153,7 @@
       <article class="card">
         <h3>ESLint の no-cond-func ルール</h3>
         <p>2020年7月18日、ESLintのカスタムルールno-cond-funcを作成しました。</p>
-        <p>JavaScriptで条件の判定に()を付けない関数を使うことを禁止します。</p>
+        <p>条件の判定式に、呼び出し忘れの関数を置くミスを防ぎます。関数の末尾に'()'を自動付与します。</p>
         <a class="cardlink hoverlink"
           href="https://github.com/querykuma/snippets/blob/master/eslint-rules/no-cond-func.js"
           title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
@@ -161,7 +164,7 @@
       <article class="card">
         <h3>ESLint の no-in-array ルール</h3>
         <p>2020年6月29日、ESLintのカスタムルールno-in-arrayを作成しました。</p>
-        <p>JavaScriptで条件の判定に'x in 配列'を使うことを禁止します。</p>
+        <p>'x in 配列'から、'配列.includes(x)'に自動修正します。</p>
         <a class="cardlink hoverlink"
           href="https://github.com/querykuma/snippets/blob/master/eslint-rules/no-in-array.js"
           title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
@@ -171,8 +174,7 @@
 
       <article class="card">
         <h3>Kosaraju と Tarjan アルゴリズム</h3>
-        <p>2020年6月14日、TypeScriptでKosarajuとTarjanアルゴリズムのプログラムを作成しました。</p>
-        <p>有向グラフの強連結成分を取得します。</p>
+        <p>2020年6月14日、TypeScriptでKosarajuとTarjanアルゴリズムのプログラムを作成しました。有向グラフの強連結成分を取得します。</p>
         <a class="cardlink hoverlink" href="https://github.com/querykuma/Algorithm" title="View GitHub repository"><span
             class="fab fa-github icon"></span>GitHub</a>
         <a class="cardlink hoverlink" href="https://qiita.com/querykuma/items/51490b1e73854003d574"
@@ -181,8 +183,7 @@
 
       <article class="card">
         <h3>Text Speech Bookmarklet</h3>
-        <p>2020年4月9日、ウェブブラウザ内のテキストを読み上げるブックマークレットを作りました。ブラウザの機能だけで読み上げます。再生箇所の表示や自動スクロールの機能があります。</p>
-        <p>英語学習に利用できます。</p>
+        <p>2020年4月9日、ウェブブラウザ内のテキストを読み上げるブックマークレットを作りました。ブラウザの機能で読み上げます。再生箇所の表示や自動スクロールの機能があります。</p>
         <a class="cardlink hoverlink" href="https://github.com/querykuma/TextSpeechBookmarklet"
           title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
       </article>
@@ -195,13 +196,6 @@
           title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
         <a class="cardlink hoverlink" href="https://qiita.com/querykuma/items/193c6f85f159c8cfe410"
           title="View article on Qiita"><span class="far fa-smile icon"></span>Qiita</a>
-      </article>
-
-      <article class="card">
-        <h3>Teratail Logs Plus</h3>
-        <p>2019年09月13日、Teratailにログ閲覧や非表示などを追加するユーザースクリプトを作りました。</p>
-        <a class="cardlink hoverlink" href="https://github.com/querykuma/Teratail_Logs_Plus"
-          title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
       </article>
 
       <article class="card">
@@ -222,46 +216,18 @@
 
       <article class="card">
         <h3>qkNppReverseLines</h3>
-        <p>2019年07月04日、行を逆順にするNotepad++のプラグインを作りました。以前のMingw32版を削除してVisual Studio 2019で作り変えました。</p>
-        <p>嬉しいのか悲しいのか、2021年06月07日にリリースされた<a href="https://notepad-plus-plus.org/downloads/v8/">Notepad++ v8</a>で同等の機能<a
-            href="https://npp-user-manual.org/docs/editing/">Reverse Line Order</a>が追加されていました。</p>
+        <p>2019年07月04日、行を逆順にするNotepad++のプラグインを作りました。</p>
+        <p>2021年06月07日にリリースされた<a href="https://notepad-plus-plus.org/downloads/v8/">Notepad++ v8</a>で、このプラグインと同等の機能<a
+            href="https://npp-user-manual.org/docs/editing/">Reverse Line Order</a>が本体に追加されて、このプラグインが不要になりました。</p>
         <a class="cardlink hoverlink" href="https://github.com/querykuma/qkNppReverseLines"
           title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
-      </article>
-
-      <article class="card">
-        <h3>twitter2thread.js</h3>
-        <p>2019年06月21日、Twitterをスレッド化して読みやすくするブックマークレットを作りました。</p>
-        <a class="cardlink hoverlink" href="https://github.com/querykuma/snippets/blob/master/twitter/twitter2thread.js"
-          title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
-        <a class="cardlink hoverlink" href="https://qiita.com/querykuma/items/02b14349e688b96eb099"
-          title="View article on Qiita"><span class="far fa-smile icon"></span>Qiita</a>
-      </article>
-
-      <article class="card">
-        <h3>Autopagerize Yahoo News Comment</h3>
-        <p>2019年04月12日、Yahooニュースのコメントを一括取得するブックマークレットを作成しました。</p>
-        <a class="cardlink hoverlink"
-          href="https://github.com/querykuma/AutopagerizeToyokeizaiComment/blob/master/autopagerize_yahoo_comment-bookmarklet.js"
-          title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
-        <a class="cardlink hoverlink" href="https://qiita.com/querykuma/items/4cfd719ffbae3a55023d"
-          title="View article on Qiita"><span class="far fa-smile icon"></span>Qiita</a>
-      </article>
-
-      <article class="card">
-        <h3>Autopagerize Toyokeizai Comment</h3>
-        <p>2019年04月11日、東洋経済オンラインのコメントを一括取得するブックマークレットを作成しました。</p>
-        <a class="cardlink hoverlink" href="https://github.com/querykuma/AutopagerizeToyokeizaiComment"
-          title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a> <a
-          class="cardlink hoverlink" href="https://qiita.com/querykuma/items/b2e4d8e0da79141678f3"
-          title="View article on Qiita"><span class="far fa-smile icon"></span>Qiita</a>
       </article>
 
       <article class="card">
         <h3>kabegami</h3>
         <p>2018年11月28日、壁紙閲覧ソフトを作りました。</p>
         <p><a class="hoverlink" href="https://querykuma.github.io/kabegami"
-            title="kabegami Demo">Website</a>でデモが見れます。右クリックメニューから機能を利用できます。</p>
+            title="kabegami Demo">Website</a>でデモを見れます。右クリックメニューから機能を利用できます。</p>
         <a class="cardlink hoverlink" href="https://github.com/querykuma/kabegami" title="View GitHub repository"><span
             class="fab fa-github icon"></span>GitHub</a>
         <a class="cardlink hoverlink" href="https://querykuma.github.io/kabegami" title="View Website"><span
@@ -271,7 +237,7 @@
       <article class="card">
         <h3>Simple Extension of Chrome/Firefox</h3>
         <p>2018年11月6日、最も簡単なChrome/Firefox拡張機能を作りました。</p>
-        <p><a href="https://qiita.com/querykuma/items/b41cd108e5df25ebbfda">Qiita</a>に解説記事があります。拡張機能のManifestのバージョンは2です。
+        <p><a href="https://qiita.com/querykuma/items/b41cd108e5df25ebbfda">Qiita</a>に解説記事があります。拡張機能のManifestバージョンは2です。
         </p>
         <a class="cardlink hoverlink" href="https://github.com/querykuma/SimpleExtension"
           title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
