@@ -10,15 +10,6 @@
     content="Query Kumaの各GitHubレポジトリを紹介するランディングページです。GitHubレポジトリやQiita記事、デモページ、Marketplaceへのリンクもあります。" />
   <link rel="dns-prefetch" href="https://qiita.com" />
   <link rel="canonical" href="https://querykuma.github.io/">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143855243-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "UA-143855243-2");
-  </script>
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Query Kumaの開発日記" />
   <meta name="twitter:description"
@@ -33,14 +24,25 @@
   <meta property="og:image" content="https://querykuma.github.io/querykuma.png" />
   <link href="main.css" rel="stylesheet" />
   <link rel="shortcut icon" href="./favicon.ico" />
+  <script async src="./src/confetti.browser.min.js"></script>
+  <script defer src="./src/index.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143855243-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-143855243-2");
+  </script>
 </head>
 
 <body>
   <main class="cards width">
     <header class="card">
       <div class="profileimg_container">
-        <img class="profileimg selectnone" src="./querykuma.png" width="256" height="256" draggable="false"
-          alt="profile" />
+        <img class="profileimg selectnone" id="profile_img" src="./querykuma.png" width="256" height="256"
+          draggable="false" alt="profile" />
       </div>
       <div>
         <h1>Query Kumaの開発日記</h1>
@@ -51,6 +53,19 @@
 
     <section class="cards">
       <h2 class="hidden">articleの一覧</h2>
+
+      <article class="card">
+        <h3>JS-TS-Function-Flow-Chart</h3>
+        <p>2024年12月11日、<a
+            href="https://querykuma.github.io/JS-TS-Function-Flow-Chart">JavaScript/TypeScript/JSXの関数フローを描くサービス</a>を作りました。
+        </p>
+        <a class="cardlink hoverlink" href="https://github.com/querykuma/JS-TS-Function-Flow-Chart"
+          title="View GitHub repository"><span class="fab fa-github icon"></span>GitHub</a>
+        <a class="cardlink hoverlink" href="https://qiita.com/querykuma/items/e0a8a29c9863beeb28c1
+        " title="View article on Qiita"><span class="far fa-smile icon"></span>Qiita</a>
+        <a class="cardlink hoverlink" href="https://querykuma.github.io/JS-TS-Function-Flow-Chart"
+          title="View Website"><span class="fas fa-cube icon"></span>Website</a>
+      </article>
 
       <article class="card">
         <h3>KugiReader</h3>

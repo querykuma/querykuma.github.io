@@ -194,6 +194,10 @@ h2 {
   display: inline-block;
 }
 
+#profile_img {
+  cursor: help;
+}
+
 .width {
   width: min(640px, 100%);
 }
